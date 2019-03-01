@@ -6,9 +6,7 @@
 This repository provides a few classes to search for startup websites and subsequently scrape them for relevant jobs.
 The top-level procedure follows the general pattern:
 
-Search repository website(s)[1]_ for startup's websites > search startup website for job page > search job page for job keywords
-
-.. [1] Only one repository's procedure has been implemented, i.e. https://startupranking.com/
+Search repository website(s) [1]_ for startup's websites > search startup website for job page > search job page for job keywords
 
 
 Dependencies
@@ -44,3 +42,5 @@ To do
 
 * Improve documentation
 * Add supplementary repositories, e.g. https://data.startups.be/actors
+
+.. [1] Only one repository's procedure has been implemented, i.e. https://startupranking.com/
