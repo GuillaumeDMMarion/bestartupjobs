@@ -22,7 +22,9 @@ Functionalities of startupscraper
 
 Basic example of scraping for startup jobs with default values (as found in scrape.py):
 
+.. code-block:: python
     from startupscraper.scraper import StartupList
+	
     startuplist = StartupList()
     startuplist.locate_startups(names=['startupranking'], depth=3)
     startuplist.create_startups()
