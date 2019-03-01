@@ -1,4 +1,4 @@
-.. image:: images/startup_job_scraping.png
+.. image:: images/startup_job_scraping.min.png
     :width: 200
 =================
 
@@ -21,13 +21,13 @@ Functionalities of startupscraper
 
 Basic example of scraping for startup jobs with default values (as found in scrape.py):
 
-	from startupscraper.scraper import StartupList
-	
-	startuplist = StartupList()
-	startuplist.locate_startups(names=['startupranking'], depth=3)
-	startuplist.create_startups()
-	startuplist.scrape_startups()
-	startuplist.save_results('results.csv')
+    from startupscraper.scraper import StartupList
+
+    startuplist = StartupList()
+    startuplist.locate_startups(names=['startupranking'], depth=3)
+    startuplist.create_startups()
+    startuplist.scrape_startups()
+    startuplist.save_results('results.csv')
 
 More particularly:
 
