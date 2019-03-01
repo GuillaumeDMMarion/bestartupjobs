@@ -20,9 +20,8 @@ Dependencies
 Functionalities of startupscraper
 =================================
 
-Basic example of scraping for startup jobs with default values (as found in scrape.py):
+Basic example of scraping for startup jobs with default values (as found in scrape.py)::
 
-.. code-block:: python
     from startupscraper.scraper import StartupList
 	
     startuplist = StartupList()
