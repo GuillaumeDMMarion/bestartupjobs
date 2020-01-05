@@ -25,7 +25,7 @@ Basic example of scraping for startup jobs with default values::
 	
     startuplist = StartupList()
     startuplist.find_startups(names=['startupranking'], depth=3)
-	startuplist.startup_urls.append('https://lyst.com')
+    startuplist.startup_urls.append('https://lyst.com')
     startuplist.create_startups()
     startuplist.scrape_startups()
     startuplist.save_results('startup_scraping_results.csv')
