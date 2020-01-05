@@ -19,19 +19,20 @@ Dependencies
 Functionalities of startupscraper
 =================================
 
-Basic example of scraping for startup jobs with default values (as found in scrape.py)::
+Basic example of scraping for startup jobs with default values::
 
     from startupscraper.scraper import StartupList
 	
     startuplist = StartupList()
-    startuplist.locate_startups(names=['startupranking'], depth=3)
+    startuplist.find_startups(names=['startupranking'], depth=3)
+	startuplist.startup_urls.append('https://lyst.com')
     startuplist.create_startups()
     startuplist.scrape_startups()
-    startuplist.save_results('results.csv')
+    startuplist.save_results('startup_scraping_results.csv')
 
 More particularly:
 
-* .locate_startups() : Finds startup urls from a repository.
+* .find_startups() : Finds startup urls from a repository.
 * .create_startups() : Initializes a Startup.
 * .scrape_startups() : Scrapes a Startup for its job page and keyword(s) on these job page.
 * .save_results() : Exports hits to a .csv file.
@@ -40,7 +41,6 @@ More particularly:
 To do
 =====
 
-* Improve documentation
-* Add supplementary repositories, e.g. https://data.startups.be/actors
+* Add more repositories, e.g. https://data.startups.be/actors
 
 .. [1] Only one repository's procedure has been implemented, i.e. https://startupranking.com/
